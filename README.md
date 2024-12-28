@@ -12,3 +12,4 @@ helm install eupf ./eupf -n open5gs
 helm install open5gs ./open5gs -n open5gs
 kubectl apply -f ./smf-configmap.yaml -n open5gs
 kubectl scale --replicas=1 deployment open5gs-smf -n open5gs
+helm install ueransim ./ueransim-gnb -n open5gs
